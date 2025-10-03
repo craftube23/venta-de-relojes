@@ -3,74 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css".css">
+    <link rel="stylesheet" href="css/style.css">
     <title>LuxTiem - Relojes de lujo</title>
 </head>
 <body>
-
-    <!-- HEADER -->
+  <!-- HEADER -->
     <header>
-
         <nav>
-
-            <div class="logo">LUXTIEM</div>
+            <div class="logo">LUXTIME</div>
             <ul>
                 <li><a href="#" onclick="showPage('home')">Inicio</a></li>
-                <li><a href="#" onclick="showPage('catalogo')">catalogo</a></li>
+                <li><a href="#" onclick="showPage('catalog')">Catálogo</a></li>
                 <li><a href="#" onclick="showPage('product-detail')">Detalle</a></li>
-                <li><a href="#" onclick="showPage('history')">historia</a></li>
+                <li><a href="#" onclick="showPage('history')">Historia</a></li>
                 <li><a href="#" onclick="showPage('contact')">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <!-- PAGINA HOME(inicio) -->
+    <!-- PÁGINA HOME -->
     <div id="home" class="page active">
 
         <!-- BANNER PRINCIPAL -->
         <section class="banner">
 
-            <div class="baner-slides">
+            <div class="banner-slides">
+
+              <!-- SLIDE 1 -->
                 <div class="slide">
+
                     <div class="banner-content">
 
                         <h1>Elegancia Atemporal</h1>
-                        <p>Descubre nuestras exclusiva de relojes de lujos</p>
-                        <a href="#" onclick="showPage('catalogo')" class="cta-button">Ver coleccion</a>
-
-                    </div>
+                        <p>Descubre nuestra colección exclusiva de relojes de lujo</p>
+                        <a href="#" onclick="showPage('catalog')" class="cta-button">Ver Colección</a>
+                    
+                      </div>
                 </div>
+
+                <!-- SLIDE 2 -->
                 <div class="slide">
+
                     <div class="banner-content">
 
-                        <h1>Presision suiza</h1>
-                        <p>cada detalle cuenta en la perfeccion del timpo</p>
-                        <a href="#" onclick="showPage('catalogo')" class="cta-button">Explorar Ahora</a>
+                        <h1>Precisión Suiza</h1>
+                        <p>Cada detalle cuenta en la perfección del tiempo</p>
+                        <a href="#" onclick="showPage('catalog')" class="cta-button">Explorar Ahora</a>
+                    
+                      </div>
+                </div>
 
+                <!-- SLIDE 3 -->
+                <div class="slide">
+                    <div class="banner-content">
+                        <h1>Artesanía Superior</h1>
+                        <p>Tradición y modernidad en cada pieza</p>
+                        <a href="#" onclick="showPage('catalog')" class="cta-button">Descubre Más</a>
                     </div>
                 </div>
             </div>
-        
         </section>
 
         <!-- RELOJES DESTACADOS -->
         <section class="container">
-
             <h2 class="section-title">Relojes Destacados</h2>
-            <div class="feactured-watches">
+            <div class="featured-watches">
                 <div class="watch-card">
-                    <div> class="watch-image">🕘</div>
-                    <div class="wahtch-info">
+                    <div class="watch-image">
+                      <img src="./asset/prueba-eliminar/1.png" alt="foto">
+                    </div>
+                    <div class="watch-info">
                         <h3 class="watch-name">Classic Heritage</h3>
                         <p class="watch-price">$2,499</p>
                         <div class="rating">★★★★★</div>
                         <a href="#" onclick="showPage('product-detail')" class="btn-details">Ver detalles</a>
                     </div>
                 </div>
-            
-            <div class="watch-card">
-                    <div class="watch-image">⌚</div>
+
+                <div class="watch-card">
+                    <div class="watch-image">
+                      <img src="./asset/img/reloj Sport Elite.jpg" alt="foto">
+                    </div>
                     <div class="watch-info">
                         <h3 class="watch-name">Sport Elite</h3>
                         <p class="watch-price">$3,299</p>
@@ -80,7 +93,9 @@
                 </div>
 
                 <div class="watch-card">
-                    <div class="watch-image">⌚</div>
+                    <div class="watch-image">
+                      <img src="./asset/img/reloj Royal Diamond.jpg" alt="foto">
+                    </div>
                     <div class="watch-info">
                         <h3 class="watch-name">Royal Diamond</h3>
                         <p class="watch-price">$5,999</p>
@@ -120,6 +135,6 @@
                 </div>
             </div>
         </section>
-    </div>
+
 </body>
 </html>

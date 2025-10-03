@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Parisienne&display=swap');
+
 * {
 
     margin: 0;
@@ -10,12 +11,12 @@
 body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1,6;
+    line-height: 1.6;
     color: #333;
 
 }
 
-/* HEADER */
+        /* HEADER */
 header {
 
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -24,8 +25,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px q0px rgba(0,0,0,0.3);
-    
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
 }
 
 nav {
@@ -70,11 +71,249 @@ nav a {
 
 nav a:hover {
 
-    height: 600px;
-    position: relative;
-    overflow:  hidden;
+    color: #d4af37;
 
 }
+
+        /* BANNER PRINCIPAL */
+.banner {
+
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.banner-slides {
+
+    display: flex;
+    height: 100%;
+    animation: slideShow 15s infinite;
+
+}
+
+.slide {
+
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.slide:nth-child(1) {
+
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+}
+
+.slide:nth-child(2) {
+
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+
+}
+
+.slide:nth-child(3) {
+
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+
+}
+
+.banner-content {
+
+    text-align: center;
+    color: white;
+    z-index: 10;
+    padding: 20px;
+
+}
+
+.banner-content h1 {
+
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 8px 4px rgba(0,0,0,0.3);
+
+}
+
+.banner-content p {
+
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+
+}
+
+.cta-button {
+
+    background: #d4af37;
+    color: #ffff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.cta-button:hover {
+
+    background: #b8941f;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+@keyframes slideShow {
+
+    0%, 30% { transform: translateX(0); }
+    33%, 63% { transform: translateX(-100%); }
+    66%, 96% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+
+}
+
+    /* CONTAINER */
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+}
+
+.section-title {
+
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 15px;
+
+}
+
+.section-title::after {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #d4af37;
+
+}
+
+/* RELOJES DESTACADOS */
+.featured-watches {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+.watch-card {
+    position: relative;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+        /* ANIMACION  */
+.watch-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+
+}
+
+.watch-image {
+
+    height: 250px;
+
+}
+
+.watch-image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+        /* MAGIA SCP */
+.watch-info {
+
+    position: absolute;
+    bottom: -8rem; /* oculto fuera de vista */
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.7); /* semitransparente */
+    color: #fff;
+    text-align: center;
+    transition: bottom 0.4s ease;
+
+}
+
+.watch-card:hover .watch-info {
+
+    bottom: 0;
+
+}
+
+.watch-name {
+
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+
+}
+
+.watch-price {
+
+    font-size: 1.1rem;
+    color: #ffd700;
+    margin-bottom: 8px;
+
+}
+
+.rating {
+
+    margin-bottom: 12px;
+
+}
+
+/* Botón */
+.btn-details {
+
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+
+}
+
+.btn-details:hover {
+
+    background: #e5c100;
+
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
