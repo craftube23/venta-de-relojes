@@ -60,11 +60,12 @@
         <section class="container">
             <h2 class="section-title">Relojes Destacados</h2>
             <div class="featured-watches">
-
+                
+                <!-- TARJETA DEL PRODUCTO -->
                 <!-- producto 1 -->
                 <div class="watch-card">
                     <div class="watch-image">
-                        <img src="./asset/img/destacados/reloj1/Reloj Oris.png" alt="foto">
+                        <img src="./asset/img/destacados/reloj1/Reloj Oris.png" alt="foto del producto">
                     </div>
                     <div class="watch-info">
                         <h3 class="watch-name">Reloj Oris</h3>
@@ -72,7 +73,8 @@
                         <p class="watch-price">$10.999.9999</p>
                         <p class="promocion">$14.000.000</p>
                         <div class="rating">★★★★★</div>
-                        <a href="#" onclick="showPage('product-detail')" class="btn-details">Ver detalles</a>
+                        <!-- enlace a la sección oculta -->
+                        <a href="#detalle1" class="btn-details"> Ver detalles</a>
                     </div>
                 </div>
 
@@ -152,6 +154,65 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- detalles de productos 1 -->
+    <div id="detalle1" class="detalle-producto" >
+
+        <div class="detalle-contenido">
+            <a href="#" class="cerrar">X</a>
+
+            <div class="detalle-imagen">
+                <img src="./asset/img/destacados/reloj1/Reloj Oris.png" alt="Reloj Oris Aquis">
+            </div>
+
+            <h2>Reloj Oris Aquis</h2>
+
+            <div class="detalle-descripcion">
+                <h3>Descripcion :</h3>
+                <p>Oris es una marca suiza de relojes fundada en 1904 en Hölstein, Suiza. 
+                    Destacada por su independencia y dedicación exclusiva a los relojes mecánicos, 
+                    Oris ha construido una sólida reputación en el mundo de la relojería de lujo. 
+                    A diferencia de muchas otras marcas, Oris se mantiene independiente, 
+                    sin pertenecer a grandes conglomerados, 
+                    lo cual le permite una libertad creativa y de diseño única.</p>
+                <h3>Detalles Tecnicos</h3>
+                <ul>
+
+                    <li><strong>Diámetro de la caja:</strong>36,5 mm</li>
+                    <li><strong>Espesor de la caja:</strong>12 mm</li>
+                    <li><strong>Resistente al agua:</strong>si</li>
+                    <li><strong>Material de la caja</strong>Material de la caja</li>
+
+                </ul>
+            </div>
+
+            <div class="detalle-opciones">
+
+                <h3>peronalizacion</h3>
+
+                    <label><input type="checkbox"> Grabado peronalizado (+50.000)</label>
+                    <label><input type="checkbox"> Correo de cuero marron (+100.000)</label>
+
+            </div>
+
+            <div class="detalle-relacionados">
+
+                <h3>Productos Relacionados</h3>
+                <div class="carrusel">
+
+                    <div class="item"><img src="./asset/img/destacados/reloj1/1.png" alt="reloj1"></div>
+                    <div class="item"><img src="./asset/img/destacados/reloj1/2.png" alt="reloj1"></div>
+                    <div class="item"><img src="./asset/img/destacados/reloj1/Reloj Oris.png" alt="reloj1"></div>
+
+                </div>
+            </div>
+
+            <a href="#" class="btn-volver" >Volver a el Inicio</a>
+
+            </div>
+
+    </div>
 
 </body>
 </html>

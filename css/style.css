@@ -199,20 +199,24 @@ nav a:hover {
 
 /* RELOJES DESTACADOS */
 .featured-watches {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
 
 .watch-card {
+
     position: relative;
     width: 280px;
     border-radius: 12px;
     overflow: hidden;
-    background: #fff;
+    background: #ffff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
         /* ANIMACION  */
@@ -236,9 +240,9 @@ nav a:hover {
 
 .watch-image img {
 
-    max-width: 100%;     /* nunca se pasa del ancho de su contenedor */
-    height: auto;        /* mantiene proporción */
-    object-fit: contain; /* ajusta la imagen sin recortarla */
+    max-width: 100%;     
+    height: auto;       
+    object-fit: contain;
     display: block;
 
 }
@@ -253,7 +257,7 @@ nav a:hover {
     width: 100%;
     padding: 15px;
     background: rgba(0,0,0,0.7); /* semitransparente */
-    color: #fff;
+    color: #ffff;
     text-align: center;
     transition: bottom 0.4s ease;
 
@@ -312,6 +316,157 @@ nav a:hover {
 
 }
 
+        /* detales ocultos */
+
+.detalle-producto {
+
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    color: #ffff;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+}
+
+/* CUANDO SE ACTIVA EL :target SE MUESTRA */
+.detalle-producto:target {
+
+    display: flex;
+
+}
+
+/* Resto del estilo igual */
+.detalle-contenido {
+
+    background: #222;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y:  auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    animation: fadeIn 0.5s ease;
+    color: #fff;
+
+}
+
+/* ... y aquí van los estilos de zoom, descripción, carrusel, etc. */
+
+@keyframes fadeIn {
+
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+
+}
+
+/* estilos específicos del modal (imágenes, botones, carrusel) */
+.cerrar {
+
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background 0.3s;
+
+}
+
+.cerrar:hover {
+
+    background: rgba(255, 255, 255, 0.322);
+
+}
+
+.detalle-imagen {
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.detalle-imagen img {
+
+    width: 100%;
+    max-width: 450px; /* evita que la imagen crezca demasiado */
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+
+}
+
+.detalle-imagen img:hover { transform: scale(1.05); }
+    
+        /* Descripcion */
+.detalle-descripcion,
+.detalle-opciones,
+.detalle-relacionados { margin-bottom: 20px; }
+
+        /* Descripcion H3 */
+.detalle-descripcion h3,
+.detalle-opciones h3,
+.detalle-relacionados h3 { color: #ffd700; margin-bottom: 8px; }
+
+        /* Descripcion ul, li, label */
+.detalle-descripcion ul { list-style: none; padding: 0; }
+.detalle-descripcion li { margin: 5px 0; }
+.detalle-opciones label { display: block; margin: 8px 0; }
+
+        /* Carrusel */
+.carrusel {
+
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+}
+
+.carrusel .item { 
+    
+    flex: 0 0 auto; 
+    max-width: 450px;
+    height: 120px; 
+    border-radius: 8px; 
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+
+}
+
+.carrusel ,.item:hover { transform: scale(1.05); }
+
+.carrusel img { 
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+
+}
+
+.btn-volver {
+
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+
+}
+
+.btn-volver:hover { background: #e5c100; }
 
 /* RESPONSIVE */
 /* 📱 Responsividad */

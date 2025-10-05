@@ -17,13 +17,13 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ### 1. Página de Inicio (Home)
 
-- [ ]  **Banner principal**
+- [X]  **Banner principal**
   - [X]  Imagen destacada con texto superpuesto.
   - [X]  Botón de llamada a la acción.
   - [X]  Rotación entre 3 imágenes (animación CSS).
-- [ ]  **Sección de relojes destacados**
-  - [ ]  6 tarjetas de producto.
-  - [ ]  Contenido: nombre, precio, rating, enlace, botón "Ver detalles".
+- [X]  **Sección de relojes destacados**
+  - [X]  6 tarjetas de producto.
+  - [X]  Contenido: nombre, precio, rating, enlace, botón "Ver detalles".
 - [ ]  **Resumen de historia corporativa**
   - [ ]  Contexto y origen.
   - [ ]  Línea de tiempo con hitos importantes.
