@@ -109,7 +109,7 @@ nav a:hover {
 .slide:nth-child(1) { 
     
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-    background-image: url("../asset/img/banner\ 1.jpeg"); /* Ruta de la imagen */ 
+    background-image: url("../asset/img/banner/banner\ 1.jpeg"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
@@ -119,7 +119,7 @@ nav a:hover {
 .slide:nth-child(2) { 
     
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
-    background-image: url("../asset/img/baner2.png"); /* Ruta de la imagen */ 
+    background-image: url("../asset/img/banner/baner2.png"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
@@ -129,7 +129,7 @@ nav a:hover {
 .slide:nth-child(3) { 
     
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
-    background-image: url("../asset/img/baner3.png"); /* Ruta de la imagen */ 
+    background-image: url("../asset/img/banner/baner3.png"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
