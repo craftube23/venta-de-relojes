@@ -91,10 +91,10 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ## 🎨 Diseño y Estilo
 
-- [ ]  Uso de Flexbox para estructura principal.
-- [ ]  Animaciones con CSS para carrusel y timeline.
-- [ ]  Hover states en botones y productos.
-- [ ]  Diseño responsive simulado.
+- [X]  Uso de Flexbox para estructura principal.
+- [X]  Animaciones con CSS para carrusel y timeline.
+- [X]  Hover states en botones y productos.
+- [X]  Diseño responsive simulado.
 
 ---
 
