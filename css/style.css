@@ -12,6 +12,7 @@ body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    background-color: beige;
     color: #333;
 
 }
@@ -469,6 +470,34 @@ nav a:hover {
 
 .btn-volver:hover { background: #e5c100; }
 
+
+
+        /* DERECHOS DE AUTOR */
+footer {
+
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffff;
+    padding: 40px 20px;
+    margin-top: 80px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+footer a {
+    color: #a364e2;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+
+    color: #764ba2;
+    text-decoration: none;
+
+}
+
+
 /* RESPONSIVE */
 /* 📱 Responsividad */
 @media (max-width: 1024px) {
@@ -534,3 +563,4 @@ nav a:hover {
 
     }
 }
+
