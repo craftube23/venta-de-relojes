@@ -24,7 +24,7 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 - [X]  **Sección de relojes destacados**
   - [X]  6 tarjetas de producto.
   - [X]  Contenido: nombre, precio, rating, enlace, botón "Ver detalles".
-- [ ]  **Resumen de historia corporativa**
+- [X]  **Resumen de historia corporativa**
   - [ ]  Contexto y origen.
   - [ ]  Línea de tiempo con hitos importantes.
   - [ ]  Identidad y filosofía (misión, visión, valores).

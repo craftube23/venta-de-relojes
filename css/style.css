@@ -469,7 +469,226 @@ nav a:hover {
 }
 
 .btn-volver:hover { background: #e5c100; }
+        
+        /* historya */
 
+#textos {
+
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.historia {
+
+    padding: 1.3rem;
+    background: #ffff;
+    border-radius: 15px;
+    position: relative;
+    width: 45%;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.historia:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+
+
+}
+
+#texto {
+
+    font-family: "Comic Relief", system-ui;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.identidad-filosofia {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 1px;
+
+}
+
+.filosofia-item {
+
+    background: #ffff;
+    border:  2px solid #ecebe6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 20px 12px rgba(0,0,0,0.1);
+
+}
+
+.filosofia-item:hover {
+
+    background: linear-gradient(135deg, #1a1a1a6c 0%, #2d2d2d5d 100%);
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 20px 12px rgba(0,0,0,0.45);
+
+}
+
+.filosofia-item h3 {
+
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+
+}
+
+    /* linea de tiempo */
+.timeline {
+
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
+    
+}
+
+.timeline::after {
+
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #d4af37;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+
+}
+
+.timeline-item {
+
+    padding: 20px;
+    background: #ffff;
+    border-radius: 12px;
+    position: relative;
+    width: 45%;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+
+}
+
+.timeline-item.left {
+    
+    left: 0;
+
+}
+
+.timeline-item.right {
+
+    left: 55%;
+
+}
+
+.timeline-item::before {
+
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #d4af37;
+    border: 3px solid #0f0f0f;
+
+}
+
+.timeline-item.left::before {
+    
+    right: -12px;
+    
+}
+
+.timeline-item.right::before {
+    
+    left: -12px;
+    
+}
+
+        /* IMAGENES */
+.galeria {
+
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+
+}
+
+.galeria img {
+
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    box-shadow: 0 20px 12px rgba(0,0,0,0.25);
+    
+}
+
+.galeria img:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.596);
+
+}
+
+    /* TESTIMONIOS */
+.testimonios {
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+
+}
+
+.testimonio {
+
+    background: #ffff;
+    border:  2px solid #ecebe6;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 20px 12px rgba(0,0,0,0.1);
+
+}
+
+.testimonio:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.596);
+
+}
+
+.autor {
+
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d4af37;
+    text-align: right;
+
+}
 
 
         /* DERECHOS DE AUTOR */

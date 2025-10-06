@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia Corporativa - LuxTime</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    /* ===== LÍNEA DE TIEMPO ===== */
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 20px;
+      border-left: 3px solid #d4af37;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 30px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -11px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #d4af37;
+      border: 3px solid #0f0f0f;
+    }
+
+    .timeline-item h3 {
+      color: #d4af37;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    /* ===== IDENTIDAD Y FILOSOFÍA ===== */
+    .filosofia {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .filosofia-item {
+      background: #1a1a1a;
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .filosofia-item:hover {
+      background: #d4af37;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .filosofia-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    /* ===== TESTIMONIOS ===== */
+    .testimonios {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonio {
+      background: #1c1c1c;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #d4af37;
+      font-style: italic;
+    }
+
+    .autor {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #d4af37;
+      text-align: right;
+    }
+
+    /* ===== IMÁGENES ===== */
+    .galeria {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Historia Corporativa de LuxTime</h1>
+
+    <h2>Contexto y Origen</h2>
+    <p>LuxTime nació en el corazón de Suiza, fusionando la tradición artesanal con la precisión de la ingeniería moderna. Desde sus primeros modelos, la marca ha buscado capturar el equilibrio entre lujo, funcionalidad y diseño atemporal.</p>
+
+    <h2>Línea de Tiempo</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>1990 - Fundación</h3>
+        <p>Se lanza el primer taller artesanal de relojes LuxTime en Ginebra, con una producción limitada de modelos hechos a mano.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2005 - Expansión Internacional</h3>
+        <p>LuxTime abre boutiques en París y Nueva York, posicionándose como símbolo de elegancia suiza en el mercado global.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2015 - Innovación Tecnológica</h3>
+        <p>Incorpora materiales sostenibles y mecanismos automáticos de precisión certificados por COSC.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2025 - Futuro Digital</h3>
+        <p>LuxTime combina relojería tradicional con conectividad inteligente sin perder su esencia artesanal.</p>
+      </div>
+    </div>
+
+    <h2>Identidad y Filosofía</h2>
+    <div class="filosofia">
+      <div class="filosofia-item">
+        <h3>⚙️ Misión</h3>
+        <p>Crear relojes que combinen arte, precisión e innovación para acompañar cada momento importante de la vida.</p>
+      </div>
+      <div class="filosofia-item">
+        <h3>🎯 Visión</h3>
+        <p>Ser reconocidos como la marca líder en relojería de lujo sostenible a nivel mundial.</p>
+      </div>
+      <div class="filosofia-item">
+        <h3>💎 Valores</h3>
+        <p>Excelencia, compromiso, sostenibilidad y respeto por la tradición artesanal.</p>
+      </div>
+    </div>
+
+    <h2>Reconocimientos y Logros</h2>
+    <p>LuxTime ha recibido múltiples premios por innovación en diseño, sostenibilidad y precisión relojera, siendo reconocida por la Federación Suiza de Relojería.</p>
+
+    <h2>Actualidad y Futuro</h2>
+    <p>Hoy, LuxTime continúa su expansión hacia mercados emergentes, explorando tecnologías ecoeficientes y colaboraciones con diseñadores de renombre.</p>
+
+    <h2>Galería Visual</h2>
+    <div class="galeria">
+      <img src="https://thumbs.dreamstime.com/b/relojes-viejos-19938416.jpg" alt="Reloj LuxTime 1">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.Bo8b8MXOx7BvDyxywV-g2QHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Reloj LuxTime 2">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80" alt="Reloj LuxTime 3">
+    </div>
+
+    <h2>Testimonios</h2>
+    <div class="testimonios">
+      <div class="testimonio">
+        “Un reloj que no solo marca el tiempo, sino que lo convierte en arte.”  
+        <div class="autor">— Coleccionista privado, Zúrich</div>
+      </div>
+      <div class="testimonio">
+        “LuxTime redefine la elegancia moderna, sin comprometer la precisión.”  
+        <div class="autor">— Revista Swiss Watch Journal</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
