@@ -25,12 +25,12 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
   - [X]  6 tarjetas de producto.
   - [X]  Contenido: nombre, precio, rating, enlace, botón "Ver detalles".
 - [X]  **Resumen de historia corporativa**
-  - [ ]  Contexto y origen.
-  - [ ]  Línea de tiempo con hitos importantes.
-  - [ ]  Identidad y filosofía (misión, visión, valores).
-  - [ ]  Reconocimientos y logros.
-  - [ ]  Actualidad y futuro.
-  - [ ]  Elementos visuales: fotos, videos, testimonios.
+  - [X]  Contexto y origen.
+  - [X]  Línea de tiempo con hitos importantes.
+  - [X]  Identidad y filosofía (misión, visión, valores).
+  - [X]  Reconocimientos y logros.
+  - [X]  Actualidad y futuro.
+  - [X]  Elementos visuales: fotos, videos, testimonios.
 
 ---
 
@@ -66,11 +66,11 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ### 5. Contacto
 
-- [ ]  Formulario con campos:
-  - [ ]  Nombre completo.
-  - [ ]  Correo electrónico.
-  - [ ]  Teléfono.
-  - [ ]  Mensaje.
+- [X]  Formulario con campos:
+  - [X]  Nombre completo.
+  - [X]  Correo electrónico.
+  - [X]  Teléfono.
+  - [X]  Mensaje.
 - [ ]  Validación visual con CSS (campos vacíos o incorrectos).
 - [ ]  Información adicional:
   - [ ]  Datos de contacto directo (correo, teléfono).
