@@ -655,7 +655,7 @@ nav a:hover {
     /* TESTIMONIOS */
 .testimonios {
 
-    margin-top: 50px;
+    margin: 50px 45px 50px 45px ;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -695,25 +695,53 @@ nav a:hover {
 footer {
 
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: #ffff;
-    padding: 40px 20px;
-    margin-top: 80px;
-    text-align: center;
-    text-decoration: none;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.footer-logo {
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #d4af37, #f4e4c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
-footer a {
-    color: #a364e2;
-    text-decoration: none;
+.footer-copy {
+
+    font-size: 0.95rem;
+    color: #ddd;
+    
+}
+
+.footer-contacto, .footer-desarrollador {
+
+    font-size: 0.95rem;
 
 }
 
-footer a:hover {
+.footer-contacto a,
+.footer-desarrollador a {
 
-    color: #764ba2;
+    color: #d4af37;
     text-decoration: none;
+    transition: 0.3s;
+    
+}
 
+.footer-contacto a:hover,
+.footer-desarrollador a:hover {
+    
+    color: #fff;
+    
 }
 
 
@@ -779,6 +807,16 @@ footer a:hover {
 
     padding: 8px 20px;
     font-size: 0.9rem;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        
+        flex-direction: column;
+        text-align: center;
 
     }
 }

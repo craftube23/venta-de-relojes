@@ -11,62 +11,91 @@
     <header>
         <nav>
             <div class="logo">LUXTIME</div>
-            <ul>
+    <ul>
 
-                <li><a href="/index.html" onclick="showPage('home')">Inicio</a></li>
-                <li><a href="/htm/catalogo.html" onclick="showPage('catalog')">Catálogo</a></li>
-                <li><a href="#" onclick="showPage('product-detail')">Detalle</a></li>
-                <li><a href="#" onclick="showPage('history')">Historia</a></li>
-                <li><a href="htm/contacto.html" onclick="showPage('contact')">Contacto</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/htm/catalogo.html">Catálogo</a></li>
+        <li><a href="#">Detalle</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    
+    </ul>
 
-    <!-- CONTACTO -->
-    <section class="contacto" id="contacto">
-    <h2 class="section-title">contactanos</h2>
-    <p>¿Tienes alguna pregunta o deseas más información? Completa el formulario y te responderemos lo antes posible.</p>
-    </section>
+</nav>
+</header>
 
-    <section>
-    <form>
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+<section class="contacto" id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+    <p style="text-align:center;">¿Tienes alguna pregunta o deseas más información? Completa el formulario y te responderemos lo antes posible.</p>
 
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+    <!-- ✉️ FORMULARIO -->
+<form action="#mensajeEnviado">
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" pattern="[0-9+ ]{7,15}" required>
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
 
-        <button type="submit">Enviar mensaje</button>
-    </form>
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" pattern="[0-9+ ]{7,15}" required>
 
-    <div class="info-contacto">
-        <p>📧 Correo: <a href="mailto:info@luxtime.com">info@luxtime.com</a></p>
-        <p>📞 Teléfono: <a href="tel:+573001234567">+57 300 123 4567</a></p>
-    </div>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
-    <div class="redes">
-        <a href="#" title="Instagram">📸</a>
-        <a href="#" title="Facebook">📘</a>
-        <a href="#" title="Twitter">🐦</a>
-        <a href="#" title="YouTube">▶️</a>
-    </div>
+    <button type="submit">Enviar mensaje</button>
+
+</form>
+
+        <!-- Información adicional -->
+<div class="info-contacto">
+
+    <p>📧 Correo: <a href="mailto:info@luxtime.com">info@luxtime.com</a></p>
+    <p>📞 Teléfono: <a href="tel:+573001234567">+57 300 123 4567</a></p>
+  
+</div>
+
+<div class="redes">
+
+    <a href="#" title="Instagram">📸</a>
+    <a href="#" title="Facebook">📘</a>
+    <a href="#" title="Twitter">🐦</a>
+    <a href="#" title="YouTube">▶️</a>
+  
+</div>
+
 </section>
 
+<!-- 🌟 MENSAJE DE ÉXITO -->
+<div id="mensajeEnviado" class="mensaje-exito">
+    <div class="mensaje-contenido">
 
+        <h3>✅ Mensaje enviado</h3>
+        <p>Gracias por contactarte con LuxTime. Pronto te responderemos.</p>
+        <a href="contacto.html">Cerrar</a>
 
-    <!-- derechos de autor -->
-    <footer>
-        <p>© 2025 LuxTime. Todos los derechos reservados.</p>
-        <p>codigo creado por craftube23</p>
-        <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+    </div>
+</div>
+
+<footer>
+    
+        <div class="footer-logo">LUXTIME</div>
+
+    <div class="footer-copy">© 2025 LuxTime. Todos los derechos reservados.</div>
+
+    <div class="footer-contacto">
         
-    </footer>
+        📧 <a href="mailto:info@luxtime.com">info@luxtime.com</a>
+    
+    </div>
+
+    <div class="footer-desarrollador">
+
+        💻 Desarrollado por <a href="https://github.com/craftube23" target="_blank">craftube23</a>
+    
+    </div>
+  
+</footer>
+
 </body>
 </html>

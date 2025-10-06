@@ -71,21 +71,21 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
   - [X]  Correo electrónico.
   - [X]  Teléfono.
   - [X]  Mensaje.
-- [ ]  Validación visual con CSS (campos vacíos o incorrectos).
-- [ ]  Información adicional:
-  - [ ]  Datos de contacto directo (correo, teléfono).
-  - [ ]  Enlaces a redes sociales.
+- [X]  Validación visual con CSS (campos vacíos o incorrectos).
+- [X]  Información adicional:
+  - [X]  Datos de contacto directo (correo, teléfono).
+  - [X]  Enlaces a redes sociales.
 
 ---
 
 ### 6. Footer
 
-- [ ]  Contenido mínimo:
-  - [ ]  Nombre de la empresa.
-  - [ ]  Año + Copyright.
-  - [ ]  Correo de contacto.
-  - [ ]  Enlace al desarrollador.
-- [ ]  Diseño con Flexbox.
+- [X]  Contenido mínimo:
+  - [X]  Nombre de la empresa.
+  - [X]  Año + Copyright.
+  - [X]  Correo de contacto.
+  - [X]  Enlace al desarrollador.
+- [X]  Diseño con Flexbox.
 
 ---
 
