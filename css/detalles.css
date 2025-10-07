@@ -1,0 +1,215 @@
+* { 
+
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+}
+
+body {
+
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    color: #ffff;
+
+}
+
+/* Ocultamos todos los productos por defecto */
+.detalle-producto {
+
+    display: none;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+/* Solo se muestra el producto activo */
+.detalle-producto:target {
+
+    display: block;
+
+}
+
+  /* IMÁGENES */
+
+.galeria {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+
+}
+
+.imagen-principal {
+
+    position: relative;
+    width: 320px;
+    height: 320px;
+
+}
+
+.imagen-principal img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.97);
+    transition: opacity 0.5s, transform 0.5s ease;
+
+}
+
+.imagen-principal img:first-child {
+
+    opacity: 1;
+    transform: scale(1);
+
+}
+/* Estructura general */
+.detalle-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔥 Mostrar imagen seleccionada al hacer clic en miniatura */
+:target {
+  scroll-margin-top: 100px; /* para evitar que la imagen quede pegada al header */
+}
+
+#img1-1:target,
+#img1-2:target,
+#img1-3:target,
+#img2-1:target,
+#img2-2:target {
+
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+
+}
+
+/* Miniaturas */
+.miniaturas {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.miniaturas img {
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+
+}
+
+.miniaturas img:hover {
+
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+
+/* Info */
+.info-producto {
+
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.detalles-tecnicos {
+
+    list-style: none;
+    margin: 15px 0;
+
+}
+
+.volver {
+
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+
+}
+
+.volver:hover {
+
+    background: #3730a3;
+
+}
+
+/* Productos relacionados */
+.relacionados {
+
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.carrusel-relacionados {
+  
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+
+}
+
+.carrusel-relacionados img {
+
+    width: 150px;
+    border-radius: 10px;
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+.detalle-contenido {
+    
+    flex-direction: column;
+
+}
+
+.imagen-principal {
+    
+    width: 90%;
+    height: auto;
+
+}
+
+.miniaturas img {
+
+    width: 60px;
+    height: 60px;
+
+}
+
+.info-producto {
+    
+    text-align: center;
+
+}
+}

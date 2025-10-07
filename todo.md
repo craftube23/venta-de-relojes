@@ -48,7 +48,7 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ### 3. Detalle del Producto
 
-- [ ]  Imagen principal con efecto zoom en hover.
+- [X]  Imagen principal con efecto zoom en hover.
 - [ ]  Descripción técnica (materiales, tamaño, peso).
 - [ ]  Opciones de personalización simuladas:
   - [ ]  Selección de grabado.

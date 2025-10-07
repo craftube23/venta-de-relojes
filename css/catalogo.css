@@ -154,6 +154,12 @@ nav a:hover {
 
 }
 
+.reloj a {
+
+    text-decoration: none;
+
+}
+
 .reloj img {
 
     width: 100%;
@@ -203,6 +209,7 @@ nav a:hover {
     margin-bottom: 10px;
 
 }
+
 
     /* FOOTER */
 footer {
