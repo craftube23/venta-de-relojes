@@ -146,6 +146,13 @@ nav a{
 #p3-3:checked ~ .imagen-principal img.p3-3,
 #p3-4:checked ~ .imagen-principal img.p3-4 { opacity:1; transform:scale(1); z-index:2 }
 
+/* mostrar imagen según radio checked - producto4 */
+#p4-1:checked ~ .imagen-principal img.p4-1,
+#p4-2:checked ~ .imagen-principal img.p4-2,
+#p4-3:checked ~ .imagen-principal img.p4-3,
+#p4-4:checked ~ .imagen-principal img.p4-4,
+#p4-5:checked ~ .imagen-principal img.p4-5 { opacity:1; transform:scale(1); z-index:2 }
+
 /* zoom al hover */
 .imagen-principal img:hover{ transform:scale(1.05) }
 
