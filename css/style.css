@@ -196,6 +196,19 @@ nav a:hover {
 
 }
 
+.lazy-img {
+
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+
+}
+
+.lazy-img[src] {
+
+    opacity: 1;
+
+}
+
 /* RELOJES DESTACADOS */
 .featured-watches {
 
