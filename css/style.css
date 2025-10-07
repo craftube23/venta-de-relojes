@@ -1,4 +1,3 @@
-
 * {
 
     margin: 0;
@@ -109,7 +108,7 @@ nav a:hover {
 .slide:nth-child(1) { 
     
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-    background-image: url("../asset/img/banner/banner\ 1..webp"); /* Ruta de la imagen */ 
+    background-image: url("../asset/banner/baner1.webp"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
@@ -119,7 +118,7 @@ nav a:hover {
 .slide:nth-child(2) { 
     
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
-    background-image: url("../asset/img/banner/baner2..webp"); /* Ruta de la imagen */ 
+    background-image: url("../asset/banner/baner2..webp"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
@@ -129,7 +128,7 @@ nav a:hover {
 .slide:nth-child(3) { 
     
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
-    background-image: url("../asset/img/banner/baner3.webp"); /* Ruta de la imagen */ 
+    background-image: url("../asset/banner/baner3.webp"); /* Ruta de la imagen */ 
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */ 
     background-position: center; /* Centra la imagen */ 
     background-repeat: no-repeat;/* Evita que se repita */ 
@@ -746,78 +745,116 @@ footer {
 
 
 /* RESPONSIVE */
-/* 📱 Responsividad */
+/* 📱 RESPONSIVE DESIGN */
+
+/* Pantallas grandes (hasta 1024px, laptops pequeñas) */
 @media (max-width: 1024px) {
-
-    .banner {
-
-    height: 70vh;
     
-    }
+    nav ul {
+    gap: 1rem;
 
-    .banner-content h1 {
-
-    font-size: 2.5rem;
-
-    }
 }
 
+.reloj {
+
+    flex: 0 0 200px;
+
+}
+}
+
+/* Tablets (hasta 768px) */
 @media (max-width: 768px) {
 
-    nav ul {
+    nav {
     flex-direction: column;
-    gap: 1rem;
-    
-    }
-    .banner {
 
-    height: 60vh;
-
-    }
-
-    .banner-content h1 {
-
-    font-size: 2rem;
-    line-height: 1.3;
-
-    }
-    .banner-content .cta-button {
-
-    padding: 10px 25px;
-    font-size: 1rem;
-
-    }
 }
 
-@media (max-width: 480px) {
+nav ul {
 
-    .banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 10px;
 
-    height: 50vh;
-
-    }
-
-    .banner-content h1 {
-
-    font-size: 1.6rem;
-
-    }
-
-    .banner-content .cta-button {
-
-    padding: 8px 20px;
-    font-size: 0.9rem;
-
-    }
 }
 
+.logo {
+
+    margin-bottom: 10px;
+
+}
+
+.reloj {
+
+    flex: 0 0 180px;
+
+}
+}
+
+/* Móviles medianos (hasta 600px) */
 @media (max-width: 600px) {
 
-    footer {
-        
-        flex-direction: column;
-        text-align: center;
+.reloj {
 
-    }
+    flex: 0 0 180px;
+
 }
 
+.carrusel {
+
+    animation-duration: 60s;
+
+}
+
+footer {
+
+    flex-direction: column;
+    text-align: center;
+
+}
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+
+.reloj {
+
+    flex: 0 0 160px;
+
+}
+
+.carrusel {
+
+    animation-duration: 70s;
+
+}
+
+footer {
+
+    flex-direction: column;
+
+}
+
+nav ul {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+  /* Ajustes de texto para pantallas pequeñas */
+h2 {
+
+    font-size: 1.2rem;
+
+}
+
+.precio {
+
+    font-size: 1rem;
+
+}
+}

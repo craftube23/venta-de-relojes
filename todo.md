@@ -36,13 +36,13 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ### 2. Catálogo de Relojes
 
-- [ ]  Grid con **20 modelos destacados**.
-- [ ]  Cada tarjeta incluye:
-  - [ ]  Imagen.
-  - [ ]  Nombre.
-  - [ ]  Precio.
-  - [ ]  Etiqueta de disponibilidad (En stock / Agotado).
-- [ ]  No se incluyen filtros ni vistas adicionales.
+- [X]  Grid con **20 modelos destacados**.
+- [X]  Cada tarjeta incluye:
+  - [X]  Imagen.
+  - [X]  Nombre.
+  - [X]  Precio.
+  - [X]  Etiqueta de disponibilidad (En stock / Agotado).
+- [X]  No se incluyen filtros ni vistas adicionales.
 
 ---
 
