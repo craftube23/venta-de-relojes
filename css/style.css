@@ -701,6 +701,19 @@ nav a:hover {
 
 }
 
+.video-section {
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.video-section video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
 
         /* DERECHOS DE AUTOR */
 footer {

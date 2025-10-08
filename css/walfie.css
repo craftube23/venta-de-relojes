@@ -1,0 +1,90 @@
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+  }
+
+  header, footer {
+    background: #d9d9d9;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  nav {
+    background: #bcbcbc;
+    padding: 10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  section {
+    border: 2px dashed #999;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .banner { height: 200px; }
+  .productos { height: 250px; }
+  .marcas { height: 200px; }
+  .historia, .contacto { height: 250px; }
+
+footer {
+
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.footer-logo {
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #d4af37, #f4e4c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.footer-copy {
+
+    font-size: 0.95rem;
+    color: #ddd;
+    
+}
+
+.footer-contacto, .footer-desarrollador {
+
+    font-size: 0.95rem;
+
+}
+
+.footer-contacto a,
+.footer-desarrollador a {
+
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.footer-contacto a:hover,
+.footer-desarrollador a:hover {
+    
+    color: #fff;
+    
+}

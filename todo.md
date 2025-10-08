@@ -49,18 +49,18 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 ### 3. Detalle del Producto
 
 - [X]  Imagen principal con efecto zoom en hover.
-- [ ]  Descripción técnica (materiales, tamaño, peso).
+- [X]  Descripción técnica (materiales, tamaño, peso).
 - [ ]  Opciones de personalización simuladas:
   - [ ]  Selección de grabado.
   - [ ]  Cambio de correa.
-- [ ]  Carrusel horizontal con productos relacionados.
+- [X]  Carrusel horizontal con productos relacionados.
 
 ---
 
 ### 4. Historia de la Empresa
 
-- [ ]  **Línea de tiempo interactiva** (scroll o tabs con CSS).
-- [ ]  **Galería visual** estilo mosaico con imágenes históricas.
+- [X]  **Línea de tiempo interactiva** (scroll o tabs con CSS).
+- [X]  **Galería visual** estilo mosaico con imágenes históricas.
 
 ---
 
@@ -103,6 +103,6 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 - [X]  Archivos HTML (Home, Catálogo, Producto, Historia, Contacto).
 - [X]  Archivo CSS global.
 - [X]  `TODO.md` (documento de planificación).
-- [ ]  Wireframes (borrador previo).
+- [X]  Wireframes (borrador previo).
 
 ---
