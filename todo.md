@@ -100,9 +100,9 @@ Este documento organiza las tareas necesarias para crear la maqueta HTML y CSS d
 
 ## ✅ Entregables
 
-- [ ]  Archivos HTML (Home, Catálogo, Producto, Historia, Contacto).
-- [ ]  Archivo CSS global.
-- [ ]  `TODO.md` (documento de planificación).
+- [X]  Archivos HTML (Home, Catálogo, Producto, Historia, Contacto).
+- [X]  Archivo CSS global.
+- [X]  `TODO.md` (documento de planificación).
 - [ ]  Wireframes (borrador previo).
 
 ---
