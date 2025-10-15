@@ -1,4 +1,6 @@
-/* reset básico */
+/* ================================
+   🔧 RESET BÁSICO
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -9,68 +11,61 @@ body.historia-page {
   font-family: 'Comic Relief', sans-serif;
   background-color: #0d0d0d;
   color: #f0f0f0;
+  overflow-x: hidden;
 }
 
- /* HEADER */
+/* ================================
+   🔝 HEADER
+================================ */
 header {
-
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: #ffff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 nav {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    background: linear-gradient(45deg, #d4af37, #f4e4c1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #d4af37, #f4e4c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 nav ul {
-
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 nav a {
-
-    color: #ffff;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 500;
-
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
 }
 
 nav a:hover {
-
-    color: #d4af37;
-
+  color: #d4af37;
 }
 
-/* Línea de tiempo */
+/* ================================
+   🕰️ LÍNEA DE TIEMPO
+================================ */
 .timeline-section {
   padding: 4rem 1rem;
   text-align: center;
@@ -88,6 +83,7 @@ nav a:hover {
   gap: 2rem;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .timeline-item {
@@ -116,7 +112,9 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* Galería mosaico */
+/* ================================
+   🖼️ GALERÍA MOSAICO
+================================ */
 .gallery-section {
   padding: 4rem 1rem;
   background: #12121b;
@@ -158,66 +156,176 @@ nav a:hover {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
 
-/* Footer */
+/* ================================
+   ⚖️ FOOTER
+================================ */
 footer {
-
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: #fff;
-    padding: 30px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-logo {
-
-    font-size: 1.6rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #d4af37, #f4e4c1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d4af37, #f4e4c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-copy {
-
-    font-size: 0.95rem;
-    color: #ddd;
-    
+  font-size: 0.95rem;
+  color: #ddd;
 }
 
-.footer-contacto, .footer-desarrollador {
-
-    font-size: 0.95rem;
-
+.footer-contacto, 
+.footer-desarrollador {
+  font-size: 0.95rem;
 }
 
 .footer-contacto a,
 .footer-desarrollador a {
-
-    color: #d4af37;
-    text-decoration: none;
-    transition: 0.3s;
-    
+  color: #d4af37;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .footer-contacto a:hover,
 .footer-desarrollador a:hover {
-    
-    color: #fff;
-    
+  color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .timeline-item {
-    flex: 0 0 80%;
+/* ================================
+   📱 RESPONSIVE DESIGN
+================================ */
+
+/* 🖥️ Laptops grandes y pantallas anchas */
+@media (max-width: 1200px) {
+  nav {
+    padding: 0 10px;
   }
-  timeline-section h2 {
+
+  .timeline-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* 💻 Tablets horizontales */
+@media (max-width: 992px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .timeline-container {
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    flex: 0 0 220px;
+  }
+}
+
+/* 📲 Tablets verticales y móviles grandes */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .timeline-section h2 {
     font-size: 1.8rem;
+  }
+
+  .timeline-item {
+    flex: 0 0 75%;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* 📞 Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .timeline-section h2,
+  .gallery-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-item {
+    flex: 0 0 90%;
+    padding: 1.5rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.9rem;
+  }
+
+  .gallery-mosaic {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .footer-logo {
+    font-size: 1.3rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+}
+
+/* 📱 Extra-pequeños (360px o menos) */
+@media (max-width: 360px) {
+  .timeline-item {
+    flex: 0 0 95%;
+  }
+
+  .timeline-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }

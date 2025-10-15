@@ -700,18 +700,47 @@ nav a:hover {
     text-align: right;
 
 }
-
-.video-section {
-    text-align: center;
+.containeer {
+   
+    position: relative;         /* Cambié de fixed → relative para evitar problemas en móviles */
+    width: 100%;
+    height: auto;
+    display: flex;
     justify-content: center;
-    margin: 50px 0;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    padding: 2rem 0;
+    background: #000;           /* opcional: da contraste */
+
+}
+
+/* Contenedor del video */
+.video-section {
+
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;       /* mantiene proporción sin usar padding hacks */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
 }
 
 .video-section video {
-    width: 80%;
-    max-width: 800px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: brightness(70%);
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
 }
 
 
@@ -772,67 +801,45 @@ footer {
 
 /* RESPONSIVE */
 /* 📱 RESPONSIVE DESIGN */
-
-/* Pantallas grandes (hasta 1024px, laptops pequeñas) */
+/* 💻 Laptops y pantallas medianas (hasta 1024px) */
 @media (max-width: 1024px) {
-    
-    nav ul {
-    gap: 1rem;
+  
+    nav ul { gap: 1rem; }
 
+    .reloj { flex: 0 0 200px; }
 }
 
-.reloj {
-
-    flex: 0 0 200px;
-
-}
-}
-
-/* Tablets (hasta 768px) */
+/* 📱 Tablets (hasta 768px) */
 @media (max-width: 768px) {
-
+    
     nav {
-    flex-direction: column;
+    
+        flex-direction: column;
+        align-items: center;
+  
+    }
 
+    nav ul {
+        
+            flex-wrap: wrap;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            border-radius: 10px;
+  
+            }
+
+.logo { margin-bottom: 10px; }
+
+.reloj {  flex: 0 0 180px;  }
 }
 
-nav ul {
-
-    flex-wrap: wrap;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 10px;
-    border-radius: 10px;
-
-}
-
-.logo {
-
-    margin-bottom: 10px;
-
-}
-
-.reloj {
-
-    flex: 0 0 180px;
-
-}
-}
-
-/* Móviles medianos (hasta 600px) */
+/* 📲 Móviles medianos (hasta 600px) */
 @media (max-width: 600px) {
+  
+    .reloj {  flex: 0 0 160px; }
 
-.reloj {
-
-    flex: 0 0 180px;
-
-}
-
-.carrusel {
-
-    animation-duration: 60s;
-
-}
+.carrusel {   animation-duration: 60s;  }
 
 footer {
 
@@ -842,45 +849,17 @@ footer {
 }
 }
 
-/* Móviles pequeños (hasta 480px) */
+/* 📞 Móviles pequeños (hasta 480px) */
 @media (max-width: 480px) {
+ 
+.reloj { flex: 0 0 140px;  }
 
-.reloj {
-
-    flex: 0 0 160px;
-
-}
-
-.carrusel {
-
-    animation-duration: 70s;
-
-}
+.carrusel {  animation-duration: 70s;  }
 
 footer {
-
+ 
     flex-direction: column;
-
-}
-
-nav ul {
-
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-}
-
-  /* Ajustes de texto para pantallas pequeñas */
-h2 {
-
-    font-size: 1.2rem;
-
-}
-
-.precio {
-
-    font-size: 1rem;
-
+    text-align: center;
+ 
 }
 }
