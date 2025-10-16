@@ -1,4 +1,64 @@
-h1 {
+* {
 
-    color: green;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+background: radial-gradient(circle at center, 
+    #a1a0e8 0%, #8483e1 20%, #6866da 30%, #4b4ad3 40%, 
+    #3230c9 50%, #2b29ac 60%, #23228f 70%, #1c1b73 80%, 
+                    #151456 90%, #0e0d39 100%);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+
+}
+
+section.container {
+
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+div .login {
+
+    display: flex;
+    flex-direction: ;
+    text-align: center;
+
+
+}
+
+form {
+
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+}   
+
+label {
+
+    text-align: center;
+    font-weight: bold;
+    color: black; 
+
+}
+
+input {
+
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background: #f7f7f7;
+    color:  #000;       
+
 }
